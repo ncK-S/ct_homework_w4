@@ -1,3 +1,4 @@
+
 alist = ['this' , 'is', 'a', 'sentence', '.']
 
 rev = [i[::-1] for i in alist]
@@ -27,16 +28,16 @@ print( string_freq('In computing, a hash table hash map is a data structure whic
 
 def linear_search(nums_, x):
 
-    for i in nums_:
+    for i in range(len(nums_)):
 
         if nums_[i] == x:
-            return i
-        else:
-            return -1
+            return nums_[i]
+        
+    return -1
 
 nums_ = [10,23,45,70,11,15]
 x = 70
 
-print(str(linear_search(nums_,x)))
+print(linear_search(nums_,x))
 
 # time complexity O/n
